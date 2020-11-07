@@ -26,6 +26,7 @@ a {
 .header {
   width: 100%;
   background: url(../upload/fish.jpg) no-repeat;
+  background-size: cover;
 }
 
 .header_menu {
@@ -54,7 +55,7 @@ a {
 }
 
 .header_wrappers {
-  padding: 225px 0 93px;
+  padding: 180px 0 50px;
   color: #FFFFFF;
   text-transform: uppercase;
   display: flex;
@@ -78,7 +79,7 @@ a {
 .header_wrappers_wrapper_title {
   font-family: "banny";
   font-size: 96px;
-  padding: 30px 0 37px;
+  padding: 30px 0 17px;
 }
 
 .header_wrappers_wrapper_border {
@@ -89,7 +90,7 @@ a {
 }
 
 .header_wrappers_wrapper_buttons {
-  padding: 30px 0 82px;
+  padding: 30px 0 35px;
 }
 
 .header_wrappers_wrapper_buttons_button {
@@ -149,12 +150,82 @@ a {
   margin-bottom: 0;
 }
 
+.about_container {
+  display: flex;
+  position: relative;
+}
+
+.about_wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.header_wrappers_wrapper_name{
+  margin-left: 25px;
+}
+
+.about_wrapper_title {
+  font-family: "banny";
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 117px 0 15px;
+}
+
+.about_wrapper_text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 19px 0 29px 18px;
+}
+
+.about_wrapper_text:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+about_wrapper:last-child {
+  position: relative;
+}
+
+.about_wrapper_frame {
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  position: absolute;
+  top: 34%;
+  left: 78%;
+}
+
 @media screen and (max-width: 1205px) {
   .header_menu_items_item {
     padding: 0 20px;
   }
   .header_wrappers_wrapper_title {
     font-size: 75px;
+  }
+  .about_wrapper_text{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .about_wrapper_text:last-child{
+    font-size: 14px;
+  }
+  .about_wrapper_image{
+    max-width: 450px;
+    height: auto;
+  }
+  .about_wrapper_frame{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #E8C300;
+    top: 38%;
+    left: 79%;
   }
 }
 
@@ -190,6 +261,10 @@ a {
     width: 40px;
     height: 40px;
   }
+ .about_wrapper_frame{
+    top: 38%;
+    left: 72%;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -211,6 +286,17 @@ a {
   .header_wrappers_wrapper:last-child {
     margin-left: 50px;
   }
+  .about_container{
+    flex-direction: column;
+  }
+  .about_wrapper{
+padding: 0 20px;
+  }
+  .about_wrapper_frame{
+    top: 62%;
+    left: 56%;
+  }
+  
 }
 
 @media screen and (max-width: 540px) {
@@ -236,5 +322,11 @@ a {
   }
   .header_wrappers_wrapper_social {
     margin-left: 20px;
+  }
+  .about_wrapper_image{
+    max-width: 320px;
+  }
+  .about_wrapper_frame{
+    display: none;
   }
 }
