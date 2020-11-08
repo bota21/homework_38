@@ -364,16 +364,20 @@ h3 {
   left: 69%;
 }
 
+.slick {
+  overflow: hidden;
+}
+
 .slick_second {
   width: 100%;
-  height: auto;
+  height: 732px;
   background: url(../upload/vegetable-1.jpg) no-repeat;
   background-size: cover;
 }
 
 .slick_third {
   width: 100%;
-  height: auto;
+  height: 732px;
   background: url(../upload/fish.jpg) no-repeat;
   background-size: cover;
 }
@@ -553,6 +557,21 @@ h3 {
   padding: 25px 275px;
 }
 
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 45px 0 40px;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer a {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin: 0 3px;
+}
+
 @media screen and (max-width: 1285px) {
   .contact_form {
     max-width: 1200px;
@@ -569,6 +588,16 @@ h3 {
   }
   .contact_form_wrapper_send {
     margin-top: 10px;
+  }
+  .wrapper_image {
+    width: 500px;
+  }
+  .wrapper_frame {
+    width: 200px;
+    height: 200px;
+  }
+  .slick_second, .slick_third {
+    height: 657px;
   }
 }
 
@@ -612,6 +641,10 @@ h3 {
   .content_wrappers_wrapper_text {
     font-size: 16px;
   }
+  .form_wrappers_frame {
+    top: 32%;
+    left: 74%;
+  }
   .promo_wrappers_wrapper_frame {
     left: -11%;
     top: 22%;
@@ -619,8 +652,8 @@ h3 {
   .promo_wrappers_wrapper_text {
     font-size: 16px;
   }
-  .slick_second img, .slick_third img {
-    max-height: 600px;
+  .slick_second, .slick_third {
+    height: 607px;
   }
 }
 
@@ -677,8 +710,8 @@ h3 {
   .wrapper_image {
     max-width: 350px;
   }
-  .slick_second img, .slick_third img {
-    max-height: 500px;
+  .slick_second, .slick_third {
+    height: 507px;
   }
   .contact_form_input {
     width: 300px;
@@ -739,8 +772,8 @@ h3 {
   .slick-dots {
     bottom: 27px;
   }
-  .slick_second img, .slick_third img {
-    min-height: 800px;
+  .slick_second, .slick_third {
+    height: 844px;
   }
   .contact_wrapper_text {
     font-size: 16px;
@@ -823,6 +856,7 @@ h3 {
   }
   .promo_wrappers_wrapper {
     margin-left: 0;
+    padding-bottom: 50px;
   }
   .promo_wrappers_wrapper:last-child {
     max-width: 315px;
@@ -830,7 +864,7 @@ h3 {
   .promo_wrappers_wrapper_title {
     text-align: center;
   }
-  .slick_second img, .slick_third img {
-    min-height: 980px;
+  .slick_second, .slick_third {
+    height: 933px;
   }
 }
