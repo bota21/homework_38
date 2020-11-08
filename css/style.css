@@ -300,6 +300,9 @@ padding: 0 20px;
 }
 
 @media screen and (max-width: 540px) {
+  .logo {
+    left: 37%;
+}
   .header_wrappers {
     flex-direction: column;
     margin-left: 0;
@@ -315,18 +318,19 @@ padding: 0 20px;
   }
   .header_wrappers_wrapper:last-child {
     flex-direction: row;
-    margin: 0;
+    margin: 20px 0 0 21px;
   }
-  .header_wrappers_wrapper_social {
-    margin: 0;
-  }
-  .header_wrappers_wrapper_social {
-    margin-left: 20px;
-  }
+
   .about_wrapper_image{
     max-width: 320px;
   }
   .about_wrapper_frame{
     display: none;
+  }
+  .header_wrappers_wrapper_buttons{
+    padding-bottom: 45px;
+  }
+  .header_wrappers_wrapper_social {
+    margin: 0 20px 0 0;
   }
 }
