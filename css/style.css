@@ -312,6 +312,100 @@ h3 {
   }
 }
 
+.form_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.form_wrappers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.form_wrappers_border {
+  margin: 22px 0 20px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_wrappers:nth-child(1) {
+  max-width: 566px;
+  padding: 0;
+}
+
+.form_wrappers_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form_wrappers_wrapper_input, .form_wrappers_wrapper_select-wrapper_select {
+  width: 276px;
+  height: 60px;
+  background: #E5E5E5;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.form_wrappers_wrapper_input:nth-child(odd) {
+  margin: 0 10px 10px 0;
+}
+
+.form_wrappers_wrapper_input:nth-child(even) {
+  margin-bottom: 10px;
+}
+
+.form_wrappers_wrapper_select-wrapper_select {
+  appearance: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form_wrappers_wrapper_select-wrapper {
+  position: relative;
+}
+
+.form_wrappers_wrapper_select-wrapper::after {
+  content: "";
+  width: 13px;
+  height: 9px;
+  background: url(../img/ic-select.png) 0 no-repeat;
+  position: absolute;
+  top: 36%;
+  left: 85%;
+}
+
+.form_wrappers_wrapper_submit {
+  width: 100%;
+  height: 60px;
+  background: #E8C300;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.form_wrappers:nth-child(2) {
+  margin-left: 24px;
+  position: relative;
+}
+
+.form_wrappers_frame {
+  top: 32%;
+  left: 69%;
+}
+
 @media screen and (max-width: 1037px) {
   .header_wrappers {
     margin-left: 150px;
@@ -321,6 +415,11 @@ h3 {
   }
   .about_wrapper:first-child {
     max-width: 370px;
+  }
+  .form_container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
   }
 }
 
@@ -388,6 +487,12 @@ h3 {
   .content_wrappers_wrapper:last-child {
     padding-bottom: 20px;
   }
+  .form_wrappers_wrapper_input, .form_wrappers_wrapper_select-wrapper_select {
+    width: 220px;
+  }
+  .form_wrappers_wrapper_submit {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -436,5 +541,11 @@ h3 {
   }
   .content_wrappers_wrapper_text:last-child {
     padding-top: 10px;
+  }
+  .form_wrappers_wrapper {
+    flex-direction: column;
+  }
+  .form_wrappers:nth-child(2) {
+    margin-left: 0;
   }
 }
